@@ -139,13 +139,11 @@ add_action( 'after_setup_theme', 'eduker_content_width', 0 );
  * Enqueue scripts and styles.
  */
 
-define( 'EDUKER_THEME_DIR', get_template_directory() );
-define( 'EDUKER_THEME_URI', get_template_directory_uri() );
-define( 'EDUKER_THEME_CSS_DIR', EDUKER_THEME_URI . '/assets/css/' );
-define( 'EDUKER_THEME_JS_DIR', EDUKER_THEME_URI . '/assets/js/' );
-define( 'EDUKER_THEME_INC', EDUKER_THEME_DIR . '/inc/' );
-
-
+define( 'INDUSTRIAL_THEME_DIR', get_template_directory() );
+define( 'INDUSTRIAL_THEME_URI', get_template_directory_uri() );
+define( 'INDUSTRIAL_THEME_CSS_DIR', INDUSTRIAL_THEME_URI . '/assets/css/' );
+define( 'INDUSTRIAL_THEME_JS_DIR', INDUSTRIAL_THEME_URI . '/assets/js/' );
+define( 'INDUSTRIAL_THEME_INC', INDUSTRIAL_THEME_DIR . '/inc/' );
 
 // wp_body_open
 if ( !function_exists( 'wp_body_open' ) ) {
@@ -157,45 +155,45 @@ if ( !function_exists( 'wp_body_open' ) ) {
 /**
  * Implement the Custom Header feature.
  */
-require EDUKER_THEME_INC . 'custom-header.php';
+require INDUSTRIAL_THEME_INC . 'custom-header.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require EDUKER_THEME_INC . 'template-functions.php';
+require INDUSTRIAL_THEME_INC . 'template-functions.php';
 
 /**
  * Custom template helper function for this theme.
  */
-require EDUKER_THEME_INC . 'template-helper.php';
+require INDUSTRIAL_THEME_INC . 'template-helper.php';
 
 /**
  * initialize kirki customizer class.
  */
-include_once EDUKER_THEME_INC . 'kirki-customizer.php';
-include_once EDUKER_THEME_INC . 'class-eduker-kirki.php';
+include_once INDUSTRIAL_THEME_INC . 'kirki-customizer.php';
+include_once INDUSTRIAL_THEME_INC . 'class-eduker-kirki.php';
 
 /**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
-    require EDUKER_THEME_INC . 'jetpack.php';
+    require INDUSTRIAL_THEME_INC . 'jetpack.php';
 }
 
 // tutor
 if ( function_exists( 'tutor' ) ) {
-require EDUKER_THEME_INC . 'eduker-tutor.php';
+require INDUSTRIAL_THEME_INC . 'eduker-tutor.php';
 }
 
 /**
  * include eduker functions file
  */
-require_once EDUKER_THEME_INC . 'class-navwalker.php';
-require_once EDUKER_THEME_INC . 'class-tgm-plugin-activation.php';
-require_once EDUKER_THEME_INC . 'add_plugin.php';
-require_once EDUKER_THEME_INC . '/common/eduker-breadcrumb.php';
-require_once EDUKER_THEME_INC . '/common/eduker-scripts.php';
-require_once EDUKER_THEME_INC . '/common/eduker-widgets.php';
+require_once INDUSTRIAL_THEME_INC . 'class-navwalker.php';
+require_once INDUSTRIAL_THEME_INC . 'class-tgm-plugin-activation.php';
+require_once INDUSTRIAL_THEME_INC . 'add_plugin.php';
+require_once INDUSTRIAL_THEME_INC . '/common/eduker-breadcrumb.php';
+require_once INDUSTRIAL_THEME_INC . '/common/eduker-scripts.php';
+require_once INDUSTRIAL_THEME_INC . '/common/eduker-widgets.php';
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.

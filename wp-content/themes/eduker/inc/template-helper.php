@@ -431,7 +431,7 @@ if ( !function_exists( 'eduker_pagination' ) ) {
 // header top bg color
 function eduker_breadcrumb_bg_color() {
     $color_code = get_theme_mod( 'eduker_breadcrumb_bg_color', '#222' );
-    wp_enqueue_style( 'eduker-custom', EDUKER_THEME_CSS_DIR . 'eduker-custom.css', [] );
+    wp_enqueue_style( 'eduker-custom', INDUSTRIAL_THEME_CSS_DIR . 'eduker-custom.css', [] );
     if ( $color_code != '' ) {
         $custom_css = '';
         $custom_css .= ".breadcrumb-bg.gray-bg{ background: " . $color_code . "}";
@@ -444,7 +444,7 @@ add_action( 'wp_enqueue_scripts', 'eduker_breadcrumb_bg_color' );
 // breadcrumb-spacing top
 function eduker_breadcrumb_spacing() {
     $padding_px = get_theme_mod( 'eduker_breadcrumb_spacing', '160px' );
-    wp_enqueue_style( 'eduker-custom', EDUKER_THEME_CSS_DIR . 'eduker-custom.css', [] );
+    wp_enqueue_style( 'eduker-custom', INDUSTRIAL_THEME_CSS_DIR . 'eduker-custom.css', [] );
     if ( $padding_px != '' ) {
         $custom_css = '';
         $custom_css .= ".breadcrumb-spacing{ padding-top: " . $padding_px . "}";
@@ -460,7 +460,7 @@ function eduker_custom_color() {
     $theme_color_2 = get_theme_mod( 'theme_color_2', '#258E46' );
     $theme_color_3 = get_theme_mod( 'theme_color_3', '#007A70' );
 
-    wp_enqueue_style( 'eduker-custom', EDUKER_THEME_CSS_DIR . 'eduker-custom.css', [] );
+    wp_enqueue_style( 'eduker-custom', INDUSTRIAL_THEME_CSS_DIR . 'eduker-custom.css', [] );
     
     if ( !empty($theme_color_1)) {
         $custom_css = '';
