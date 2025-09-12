@@ -33,7 +33,7 @@ function industrial_scripts() {
     wp_enqueue_script( 'easing', INDUSTRIAL_THEME_JS_DIR . 'easing.min.js', [ 'jquery' ], false, true );
     wp_enqueue_script( 'counterup', INDUSTRIAL_THEME_JS_DIR . 'counterup.js', [ 'jquery' ], false, true );
     wp_enqueue_script( 'owl-carousel', INDUSTRIAL_THEME_JS_DIR . 'owl.carousel.min.js', [ 'jquery' ], false, true );
-
+    
     wp_enqueue_script( 'meanmenu', INDUSTRIAL_THEME_JS_DIR . 'meanmenu.js', [ 'jquery' ], false, true );
     wp_enqueue_script( 'isotope-pkgd', INDUSTRIAL_THEME_JS_DIR . 'isotope-pkgd.js', [ 'imagesloaded' ], false, true );
     wp_enqueue_script( 'industrial-main', INDUSTRIAL_THEME_JS_DIR . 'main.js', [ 'jquery' ], false, true );
